@@ -6,9 +6,9 @@ This repository collects links and resources for the class on SPARQL Anything th
 
 ## SPARQL Anything documentation
 
-## Homework 1
+## Assignment 1
 
-Goal: Design a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/COLLEZIONE_GAM.json).
+Goal: Designing a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/COLLEZIONE_GAM.json).
 
 ### Target Knowledge
 
@@ -66,9 +66,9 @@ ex:MORELLI_Domenico  rdf:label  "MORELLI Domenico" .
 
 ```
 
-## Homework 2
+## Assignment 2
 
-Goal: Design a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg_2.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/csv_input.csv).
+Goal: Designing a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg_2.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/csv_input.csv).
 
 
 ### Target Knowledge Graph
