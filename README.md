@@ -4,7 +4,13 @@ This repository collects links and resources for the class on SPARQL Anything th
 
 ## Video Tutorial and Slides
 
-## SPARQL Anything documentation
+## SPARQL Anything links
+
+-  [Website](https://sparql-anything.cc/)
+-  [Documentation](https://sparql-anything.readthedocs.io/en/latest/)
+-  [GitHub Repository](https://github.com/SPARQL-Anything/sparql.anything)
+-  [Releases](https://github.com/SPARQL-Anything/sparql.anything/releases)
+-  [Showcase IMMA](https://github.com/SPARQL-Anything/showcase-imma) [Showcase Propbank](https://github.com/SPARQL-Anything/showcase-propbank) [Showcase Tate Gallery](https://github.com/SPARQL-Anything/showcase-tate)
 
 ## Assignment 1
 
