@@ -6,7 +6,7 @@ This repository collects links and resources for the class on SPARQL Anything th
 
 ## SPARQL Anything documentation
 
-## Homework
+## Homework 1
 
 Goal: Design a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/COLLEZIONE_GAM.json).
 
@@ -64,4 +64,80 @@ ex:MORELLI_Domenico  rdf:label  "MORELLI Domenico" .
   }
 ]
 
+```
+
+## Homework 2
+
+Goal: Design a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg_2.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/csv_input.csv).
+
+
+### Target Knowledge Graph
+
+```turtle
+@prefix schema: <http://schema.org/> .
+@prefix ex:    <http://example.org/> .
+@prefix rdf:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:You_Shook_Me_All_Night_Long
+        a                schema:MusicRecording ;
+        schema:byArtist  ex:ACDC ;
+        schema:name      "You Shook Me All Night Long" .
+
+ex:Muse  a           schema:MusicGroup ;
+        schema:name  "Muse" .
+
+ex:The_Beatles  a    schema:MusicGroup ;
+        schema:name  "The Beatles" .
+
+ex:Seven_Nation_Army  a  schema:MusicRecording ;
+        schema:byArtist  ex:The_White_Stripes ;
+        schema:name      "Seven Nation Army" .
+
+ex:Come_Together  a      schema:MusicRecording ;
+        schema:byArtist  ex:The_Beatles ;
+        schema:name      "Come Together" .
+
+ex:Thunderstruck  a      schema:MusicRecording ;
+        schema:byArtist  ex:ACDC ;
+        schema:name      "Thunderstruck" .
+
+ex:ACDC  a           schema:MusicGroup ;
+        schema:name  "ACDC" .
+
+ex:Starlight  a          schema:MusicRecording ;
+        schema:byArtist  ex:Muse ;
+        schema:name      "Starlight" .
+
+ex:The_White_Stripes  a  schema:MusicGroup ;
+        schema:name  "The White Stripes" .
+
+ex:Adventure_Of_A_Lifetime
+        a                schema:MusicRecording ;
+        schema:byArtist  ex:Coldplay ;
+        schema:name      "Adventure Of A Lifetime" .
+
+ex:Coldplay  a       schema:MusicGroup ;
+        schema:name  "Coldplay" .
+
+<http://example.org/Feel_Good_Inc.>
+        a                schema:MusicRecording ;
+        schema:byArtist  ex:Gorillaz ;
+        schema:name      "Feel Good Inc." .
+
+ex:Gorillaz  a       schema:MusicGroup ;
+        schema:name  "Gorillaz" .
+```
+
+### Input
+
+```
+Artist,Title
+The Beatles,Come Together
+ACDC,Thunderstruck
+Coldplay,Adventure Of A Lifetime
+The White Stripes,Seven Nation Army
+ACDC,You Shook Me All Night Long
+Muse,Starlight
+Gorillaz,Feel Good Inc.
 ```
