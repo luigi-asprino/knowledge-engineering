@@ -1,0 +1,38 @@
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX schema: <http://schema.org/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myns: <http://example.org/myns/>
+
+CONSTRUCT {
+  ?tvSeriesMyNs a schema:TVSeries .
+  ?tvSeriesMyNs schema:name ?seriesName .
+  ?tvSeriesMyNs schema:genre ?genreMyNs .
+  ?tvSeriesMyNs schema:inLanguage ?language .
+  ?tvSeriesMyNs schema:startDate ?premiered .
+  ?tvSeriesMyNs schema:creativeWorkStatus ?status .
+  ?tvSeriesMyNs schema:description ?summary .
+  ?tvSeriesMyNs schema:actor ?starMyNs .
+  ?starMyNs a schema:Person .
+  ?starMyNs schema:name ?star .
+} WHERE {
+  SERVICE <x-sparql-anything:https://sparql-anything.cc/example1.json> {
+
+    ?tvSeries xyz:name ?seriesName .
+    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?seriesName, " ", "_", "i"))) AS ?tvSeriesMyNs)
+
+    ?tvSeries xyz:genres ?genreContainer .
+    ?genreContainer fx:anySlot ?genre .
+    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?genre, " ", "_", "i"))) AS ?genreMyNs)
+
+    ?tvSeries xyz:language ?language .
+    ?tvSeries xyz:premiered ?premiered .
+    ?tvSeries xyz:status ?status .
+    ?tvSeries xyz:summary ?summary .
+
+    ?tvSeries xyz:stars ?starContainer .
+    ?starContainer fx:anySlot ?star .
+    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?star, " ", "_", "i"))) AS ?starMyNs)
+  }
+}

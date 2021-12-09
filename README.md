@@ -4,6 +4,11 @@ This repository collects links and resources for the class on SPARQL Anything th
 
 ## Video Tutorial and Slides
 
+- [Video Tutorial](https://www.dropbox.com/s/bc31v0klg68op0z/SPARQLAnythingTutorial-highres.mp4?dl=0)
+- [Slides](https://www.dropbox.com/s/6t7e6ehwkpvaf5b/AGentleIntroductionToSPARQLAnything.pdf?dl=0)
+- [CONSTRUCT query](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/query_slides.rq)
+
+
 ## SPARQL Anything links
 
 -  [Website](https://sparql-anything.cc/)
