@@ -8,52 +8,39 @@
         a          foaf:Agent ;
         foaf:name  "Thurman, Paula" .
 
-<http://example.org/XML_Developer's_Guide>
-        a                    fabio:Book ;
-        dcterms:creator      <http://example.org/Gambardella,_Matthew> ;
-        dcterms:description  "An in-depth look at creating applications\n      with XML." ;
-        dcterms:title        "XML Developer's Guide" .
+ex:bk104  a                  fabio:Book ;
+        dcterms:creator      <http://example.org/Corets,_Eva> ;
+        dcterms:description  "In post-apocalypse England, the mysterious\n      agent known only as Oberon helps to create a new life\n      for the inhabitants of London. Sequel to Maeve\n      Ascendant." ;
+        dcterms:title        "Oberon's Legacy" .
 
 <http://example.org/Corets,_Eva>
         a          foaf:Agent ;
         foaf:name  "Corets, Eva" .
 
-<http://example.org/Ralls,_Kim>
-        a          foaf:Agent ;
-        foaf:name  "Ralls, Kim" .
-
-ex:The_Sundered_Grail
-        a                    fabio:Book ;
-        dcterms:creator      <http://example.org/Corets,_Eva> ;
-        dcterms:description  "The two daughters of Maeve, half-sisters,\n      battle one another for control of England. Sequel to\n      Oberon's Legacy." ;
-        dcterms:title        "The Sundered Grail" .
-
-ex:Midnight_Rain  a          fabio:Book ;
+ex:bk102  a                  fabio:Book ;
         dcterms:creator      <http://example.org/Ralls,_Kim> ;
         dcterms:description  "A former architect battles corporate zombies,\n      an evil sorceress, and her own childhood to become queen\n      of the world." ;
         dcterms:title        "Midnight Rain" .
 
-ex:Splish_Splash  a          fabio:Book ;
+ex:bk107  a                  fabio:Book ;
         dcterms:creator      <http://example.org/Thurman,_Paula> ;
         dcterms:description  "A deep sea diver finds true love twenty\n      thousand leagues beneath the sea." ;
         dcterms:title        "Splish Splash" .
+
+<http://example.org/Ralls,_Kim>
+        a          foaf:Agent ;
+        foaf:name  "Ralls, Kim" .
+
+ex:bk105  a                  fabio:Book ;
+        dcterms:creator      <http://example.org/Corets,_Eva> ;
+        dcterms:description  "The two daughters of Maeve, half-sisters,\n      battle one another for control of England. Sequel to\n      Oberon's Legacy." ;
+        dcterms:title        "The Sundered Grail" .
 
 <http://example.org/Randall,_Cynthia>
         a          foaf:Agent ;
         foaf:name  "Randall, Cynthia" .
 
-ex:Lover_Birds  a            fabio:Book ;
-        dcterms:creator      <http://example.org/Randall,_Cynthia> ;
-        dcterms:description  "When Carla meets Paul at an ornithology\n      conference, tempers fly as feathers get ruffled." ;
-        dcterms:title        "Lover Birds" .
-
-<http://example.org/Oberon's_Legacy>
-        a                    fabio:Book ;
-        dcterms:creator      <http://example.org/Corets,_Eva> ;
-        dcterms:description  "In post-apocalypse England, the mysterious\n      agent known only as Oberon helps to create a new life\n      for the inhabitants of London. Sequel to Maeve\n      Ascendant." ;
-        dcterms:title        "Oberon's Legacy" .
-
-ex:Maeve_Ascendant  a        fabio:Book ;
+ex:bk103  a                  fabio:Book ;
         dcterms:creator      <http://example.org/Corets,_Eva> ;
         dcterms:description  "After the collapse of a nanotechnology\n      society in England, the young survivors lay the\n      foundation for a new society." ;
         dcterms:title        "Maeve Ascendant" .
@@ -61,3 +48,13 @@ ex:Maeve_Ascendant  a        fabio:Book ;
 <http://example.org/Gambardella,_Matthew>
         a          foaf:Agent ;
         foaf:name  "Gambardella, Matthew" .
+
+ex:bk101  a                  fabio:Book ;
+        dcterms:creator      <http://example.org/Gambardella,_Matthew> ;
+        dcterms:description  "An in-depth look at creating applications\n      with XML." ;
+        dcterms:title        "XML Developer's Guide" .
+
+ex:bk106  a                  fabio:Book ;
+        dcterms:creator      <http://example.org/Randall,_Cynthia> ;
+        dcterms:description  "When Carla meets Paul at an ornithology\n      conference, tempers fly as feathers get ruffled." ;
+        dcterms:title        "Lover Birds" .
