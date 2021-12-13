@@ -16,6 +16,7 @@ This repository collects links and resources for the [Knowledge Engineering clas
 -  [GitHub Repository](https://github.com/SPARQL-Anything/sparql.anything)
 -  [Releases](https://github.com/SPARQL-Anything/sparql.anything/releases)
 -  [Showcase IMMA](https://github.com/SPARQL-Anything/showcase-imma) [Showcase Propbank](https://github.com/SPARQL-Anything/showcase-propbank) [Showcase Tate Gallery](https://github.com/SPARQL-Anything/showcase-tate)
+-  Survey on [Knowledge Graph Construction](https://docs.google.com/forms/d/e/1FAIpQLSfbnGLug1jgqe7ixGvIGPHtS6YvksreNOEj5nU59-9MON6TDQ/viewform?usp=sf_link)
 
 ## Assignment 1
 
