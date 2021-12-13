@@ -1,6 +1,6 @@
 # SPARQL Anything resources
 
-This repository collects links and resources for the [Knowledge Engineering class](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/446613) class on SPARQL Anything that will take place on December 16th.
+This repository collects links and resources for the [Knowledge Engineering class](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/446613) class on SPARQL Anything that will take place on December 14th.
 
 ## Video Tutorial and Slides
 
