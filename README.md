@@ -17,12 +17,14 @@ This repository collects links and resources for the [Knowledge Engineering clas
 -  [Releases](https://github.com/SPARQL-Anything/sparql.anything/releases)
 - [Live Demo](http://90.147.189.232:9000/sparql)
 -  [Showcase IMMA](https://github.com/SPARQL-Anything/showcase-imma) [Showcase Propbank](https://github.com/SPARQL-Anything/showcase-propbank) [Showcase Tate Gallery](https://github.com/SPARQL-Anything/showcase-tate)
--  **Important**: once you have completed the assignments please take a few minutes to fill out our survey on [Knowledge Graph Construction](https://docs.google.com/forms/d/e/1FAIpQLSfbnGLug1jgqe7ixGvIGPHtS6YvksreNOEj5nU59-9MON6TDQ/viewform?usp=sf_link). 
+-  **Important**: once you have completed the assignments please take a few minutes to fill out our survey on [Knowledge Graph Construction](https://docs.google.com/forms/d/e/1FAIpQLSfbnGLug1jgqe7ixGvIGPHtS6YvksreNOEj5nU59-9MON6TDQ/viewform?usp=sf_link).
 -  [Share your **solution**](https://docs.google.com/document/d/1LgHaXqE4vYrho2RM5zq8aQTtY_AKhtYLsi6Sb2fSuPw/edit?usp=sharing)
 
 ## Assignment 1
 
 Goal: Designing a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/COLLEZIONE_GAM.json).
+
+[**Solution**](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/query1.sparql)
 
 ### Target Knowledge
 
@@ -83,6 +85,8 @@ ex:MORELLI_Domenico  rdf:label  "MORELLI Domenico" .
 ## Assignment 2
 
 Goal: Designing a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg_2.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/csv_input.csv).
+
+[**Solution**](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/query2.sparql)
 
 
 ### Target Knowledge Graph
@@ -159,6 +163,8 @@ Gorillaz,Feel Good Inc.
 ## Assignment 3
 
 Goal: Designing a SPARQL Anything construct query that extracts the following [target Knowledge Graph](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/target_kg_3.ttl) from [this input file](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/assignment_3.xml).
+
+[**Solution**](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/query3.sparql)
 
 ### Target KG
 

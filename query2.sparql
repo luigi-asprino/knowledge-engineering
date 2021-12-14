@@ -1,0 +1,19 @@
+PREFIX schema: <http://schema.org/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+CONSTRUCT {
+  ?song a schema:MusicRecording .
+  ?song schema:name ?title .
+  ?artistURI a schema:MusicGroup .
+  ?song schema:byArtist ?artistURI .
+  ?artistURI schema:name ?artist .
+} WHERE {
+  SERVICE <x-sparql-anything:location=https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/csv_input.csv,csv.headers=true> {
+    ?s xyz:Title ?title .
+    BIND(IRI(CONCAT("http://example.org/",REPLACE(?title," ","_"))) AS ?song)
+    ?s xyz:Artist ?artist .
+    BIND(IRI(CONCAT("http://example.org/",REPLACE(?artist," ","_"))) AS ?artistURI)
+  }
+}

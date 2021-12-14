@@ -1,0 +1,33 @@
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+PREFIX arco-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX arco: <https://w3id.org/arco/ontology/arco/>
+CONSTRUCT {
+
+  ?culturalPropertyMyNS a arco:CulturalProperty .
+  ?culturalPropertyMyNS rdfs:label ?title .
+  ?authorshipAttributionURI a arco-cd:AuthorshipAttribution .
+  ?authorshipAttributionURI arco-cd:hasAttributedAuthor ?authorURI .
+  ?authorURI rdfs:label ?authorName .
+  ?authorshipAttributionURI arco-cd:isAuthorshipAttributionOf ?culturalPropertyMyNS .
+
+}WHERE {
+  SERVICE<x-sparql-anything:>{
+
+    fx:properties fx:location "https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/COLLEZIONE_GAM.json" .
+
+    ?author xyz:Autore ?authorName .
+    BIND(IRI(CONCAT("http://example.org/",REPLACE(?authorName, " ", "_", "i"))) AS ?authorURI)
+
+    ?culturalProperty xyz:Titolo ?title .
+    BIND(IRI(CONCAT("http://example.org/",REPLACE(?title, " ", "_", "i"), "_by_", REPLACE(?authorName, " ", "_", "i"))) AS ?culturalPropertyMyNS)
+
+    BIND(IRI(CONCAT("http://example.org/","Authorship_attribution_",REPLACE(?authorName, " ", "_", "i"),"_", REPLACE(?title, " ", "_", "i"))) AS ?authorshipAttributionURI)
+
+
+
+  }
+} 

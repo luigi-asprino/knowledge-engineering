@@ -1,0 +1,34 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX ex: <http://example.org/>
+CONSTRUCT {
+  ?booURI a fabio:Book ;
+    dcterms:title ?titleString ;
+    dcterms:description ?descriptionString ;
+    dcterms:creator ?authorURI .
+
+  ?authorURI a foaf:Agent ;
+     foaf:name ?authorString .
+}
+WHERE {
+  SERVICE<x-sparql-anything:https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/assignment_3.xml> {
+    ?book a xyz:book .
+    ?book fx:anySlot ?authorTag .
+    ?authorTag a xyz:author .
+    ?authorTag rdf:_1 ?authorString .
+    BIND(IRI(CONCAT("http://example.org/",REPLACE(?authorString," ","_"))) AS ?authorURI)
+    ?book fx:anySlot ?titleTag .
+    ?book xyz:id ?id .
+    ?titleTag a xyz:title .
+    ?titleTag rdf:_1 ?titleString .
+    BIND(IRI(CONCAT("http://example.org/",?id)) AS ?booURI)
+  	?book fx:anySlot ?descriptionTag .
+    ?descriptionTag a xyz:description .
+    ?descriptionTag rdf:_1 ?descriptionString .
+  }
+}
