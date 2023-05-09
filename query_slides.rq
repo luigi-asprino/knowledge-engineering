@@ -20,11 +20,11 @@ CONSTRUCT {
   SERVICE <x-sparql-anything:https://sparql-anything.cc/example1.json> {
 
     ?tvSeries xyz:name ?seriesName .
-    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?seriesName, " ", "_", "i"))) AS ?tvSeriesMyNs)
+    BIND (fx:entity("http://example.org/myns/", REPLACE(?seriesName, " ", "_", "i")) AS ?tvSeriesMyNs)
 
     ?tvSeries xyz:genres ?genreContainer .
     ?genreContainer fx:anySlot ?genre .
-    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?genre, " ", "_", "i"))) AS ?genreMyNs)
+    BIND (fx:entity("http://example.org/myns/", REPLACE(?genre, " ", "_", "i")) AS ?genreMyNs)
 
     ?tvSeries xyz:language ?language .
     ?tvSeries xyz:premiered ?premiered .
@@ -33,6 +33,6 @@ CONSTRUCT {
 
     ?tvSeries xyz:stars ?starContainer .
     ?starContainer fx:anySlot ?star .
-    BIND (IRI(CONCAT("http://example.org/myns/", REPLACE(?star, " ", "_", "i"))) AS ?starMyNs)
+    BIND (fx:entity("http://example.org/myns/", REPLACE(?star, " ", "_", "i")) AS ?starMyNs)
   }
 }
