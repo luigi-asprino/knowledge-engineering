@@ -12,7 +12,7 @@ This repository collects links and resources for the [Knowledge Engineering clas
 ## SPARQL Anything links
 
 -  [Website](https://sparql-anything.cc/)
--  [Documentation](https://sparql-anything.readthedocs.io/en/latest/) (Please use the release [v0.9.0](https://github.com/SPARQL-Anything/sparql.anything/releases/tag/v0.9.0))
+-  [Documentation](https://sparql-anything.readthedocs.io/en/latest/) (Please use the release [v0.9.0](https://github.com/SPARQL-Anything/sparql.anything/releases/tag/0.9.0))
 -  [GitHub Repository](https://github.com/SPARQL-Anything/sparql.anything)
 -  [Releases](https://github.com/SPARQL-Anything/sparql.anything/releases)
 -  [Showcase IMMA](https://github.com/SPARQL-Anything/showcase-imma) [Showcase Propbank](https://github.com/SPARQL-Anything/showcase-propbank) [Showcase Tate Gallery](https://github.com/SPARQL-Anything/showcase-tate)
