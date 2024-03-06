@@ -15,7 +15,9 @@ This repository collects links and resources for the [Knowledge Engineering clas
 -  [Documentation](https://sparql-anything.readthedocs.io/en/latest/) (Please use the release [v0.9.0](https://github.com/SPARQL-Anything/sparql.anything/releases/tag/0.9.0))
 -  [GitHub Repository](https://github.com/SPARQL-Anything/sparql.anything)
 -  [Releases](https://github.com/SPARQL-Anything/sparql.anything/releases)
+- [Colab Notebook for using *pysparql-anything* library](https://colab.research.google.com/drive/1FqGfkW-d89Asrh8oBw5vxe8677LOvSwS?usp=sharing)
 -  [Showcase IMMA](https://github.com/SPARQL-Anything/showcase-imma) [Showcase Propbank](https://github.com/SPARQL-Anything/showcase-propbank) [Showcase Tate Gallery](https://github.com/SPARQL-Anything/showcase-tate)
+
 <!-- -  **Important**: once you have completed the assignments please take a few minutes to fill out our survey on [Knowledge Graph Construction](https://docs.google.com/forms/d/e/1FAIpQLSfbnGLug1jgqe7ixGvIGPHtS6YvksreNOEj5nU59-9MON6TDQ/viewform?usp=sf_link).
 # -  [Share your **solution**](https://docs.google.com/document/d/1LgHaXqE4vYrho2RM5zq8aQTtY_AKhtYLsi6Sb2fSuPw/edit?usp=sharing)-->
 
