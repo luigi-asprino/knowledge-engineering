@@ -5,7 +5,7 @@ This repository collects links and resources for the [Knowledge Engineering clas
 ## Video Tutorial and Slides
 
 - [Video Tutorial](https://www.dropbox.com/s/bc31v0klg68op0z/SPARQLAnythingTutorial-highres.mp4?dl=0)
-- [Slides](https://docs.google.com/presentation/d/1wAuGtjqLxS4mA68PUUH1FKB7QcdshgynLBp7ssP1fsM/edit?usp=sharing)
+- [Slides](https://docs.google.com/presentation/d/1zFV7TQg_vTer-jVa26aly32r9wajdE4yZ7AsbNfY7Tc/edit?usp=sharing)
 - [CONSTRUCT query](https://raw.githubusercontent.com/luigi-asprino/knowledge-engineering/master/query_slides.rq)
 
 
